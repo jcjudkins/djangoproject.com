@@ -23,18 +23,6 @@ class Migration(migrations.Migration):
             name='approved_at',
         ),
         migrations.RemoveField(
-            model_name='boardmember',
-            name='account',
-        ),
-        migrations.RemoveField(
-            model_name='boardmember',
-            name='office',
-        ),
-        migrations.RemoveField(
-            model_name='boardmember',
-            name='term',
-        ),
-        migrations.RemoveField(
             model_name='meeting',
             name='board_attendees',
         ),
@@ -61,15 +49,6 @@ class Migration(migrations.Migration):
         ),
         migrations.DeleteModel(
             name='ApprovedIndividualMember',
-        ),
-        migrations.DeleteModel(
-            name='Office',
-        ),
-        migrations.DeleteModel(
-            name='Term',
-        ),
-        migrations.DeleteModel(
-            name='BoardMember',
         ),
         migrations.DeleteModel(
             name='Business',
